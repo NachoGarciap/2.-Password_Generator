@@ -1,2 +1,2 @@
-# 2.-Generador-de-Constrase-as
+# 2.-Password Generator
 2. Generador de Constraseñas

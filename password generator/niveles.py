@@ -22,12 +22,17 @@ class GeneradorContraseñas:
         }
 
     def generar_contraseña(self, nivel, num_caracteres):
-        if nivel not in self.niveles: #si el nivel no esta en el diccionario de niveles
+        if nivel not in self.niveles:  # si el nivel no esta en el diccionario de niveles
             print("Nivel no válido")
             return None
         else:
             caracteres = self.niveles[nivel]
             return ''.join(random.choices(caracteres, k=num_caracteres))
+
+    def guardar_en_archivo(self, contraseña):
+        with open('contraseñas.txt', 'a', encoding='utf8') as archivo:
+            archivo.write(contraseña + '\n')
+        print(f'Contraseña guardada en contraseñas.txt')
 
     def menu(self):
         while True:
@@ -47,6 +52,11 @@ class GeneradorContraseñas:
                     else:
                         contraseña = self.generar_contraseña(nivel, num_caracteres)
                         print(f'Contraseña generada: {contraseña}')
+
+                        # preguntamos si el usuario quiere guardar la contraseña
+                        guardar = input('¿Desea guardar la contraseña (si/no)?')
+                        if guardar == 'si':
+                            self.guardar_en_archivo(contraseña)
 
                 elif opcion == 2:
                     sys.exit('Saliendo del programa...')

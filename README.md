@@ -1,4 +1,4 @@
-Generador de Contraseñas🔐 
+# 🔐 Generador de Contraseñas
 
 Generador de contraseñas seguras hecho en Python. Permite crear contraseñas aleatorias con distintos niveles de seguridad según las necesidades del usuario.
 

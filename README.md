@@ -1,12 +1,16 @@
-# 2.-Password Generator
-Este proyecto es un generador de contraseñas seguras hecho Python que permite a los usuarios crear contraseñas aleatorias de diferentes niveles de seguridad. Puedes elegir entre varios niveles de dificultad y especificar el número de caracteres para la contraseña generada.
+Generador de Contraseñas🔐 
 
-# Características
-Generador de contraseñas aleatorias según 3 niveles de seguridad:
+Generador de contraseñas seguras hecho en Python. Permite crear contraseñas aleatorias con distintos niveles de seguridad según las necesidades del usuario.
+
+🚀 Características
+✅ Generación de contraseñas seguras con tres niveles de seguridad:
+
   - Nivel 1: Solo letras mayúsculas y minúsculas.
   - Nivel 2: Letras mayúsculas, minúsculas y números.
   - Nivel 3: Letras mayúsculas, minúsculas, números y símbolos especiales.
 
-El usuario puede especificar la longitud de la contraseña deseada.
+✅ Personalización de la longitud de la contraseña.
 
-El programa valida las entradas del usuario para asegurar que se ingresen datos correctos.
+✅ Validación de entradas para evitar errores del usuario.
+
+✅ Menú interactivo que facilita la selección de opciones.
